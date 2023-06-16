@@ -119,6 +119,7 @@ img{
     top: 68px;
     background-color: var(--secondary-blu-color);
     border-radius: 2px;
+    bottom: -1px;
 }
 
 .header-menu-link:focus{
@@ -127,6 +128,7 @@ img{
 
 .active {
     position: relative;
+    color: var(--secondary-blu-color);
 
 }
 
@@ -239,12 +241,12 @@ max-width: 264px;
     display: flex;
     width: 264px;
     height: 112px;
-    background-color: var(--primary-white-color);
+    background-color: var(--secondary-white-color);
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-
-
+    margin-bottom: 8px;
+    
 }
 .feature-item-title {
     color: var(--primary-dark-color);
@@ -442,7 +444,7 @@ max-width: 264px;
 
 .footerino{
     display:flex;
-    gap: 120px;
+    align-items: baseline;
 }
     
 .footer-paragraph {
@@ -452,6 +454,10 @@ max-width: 264px;
     color: var(--secondary-white-color);
     max-width: 264px;
     margin-right: 0;
+}
+
+.footer-container{
+    margin-right: 120px;
 }
 
 .logo-footer {
@@ -482,7 +488,6 @@ max-width: 264px;
 
 .footer-soc{
     display: block;
-    align-items: baseline;
 
 }
 
