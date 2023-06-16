@@ -413,6 +413,7 @@ max-width: 264px;
     border: 1px solid var(--primary-grey-color);
     border-radius: 4px;
     color: var(--primary-grey-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover{
@@ -492,6 +493,10 @@ max-width: 264px;
 }
 
 .footer-icon-container{
+    
+}
+
+.footer-list-item{
     width: 40px;
     height: 40px;
 }
@@ -512,6 +517,7 @@ max-width: 264px;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-blu-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .footer-link-soc:hover{
@@ -568,19 +574,6 @@ max-width: 264px;
     width: calc((100% - 48px) / 3); 
 }
 
-.portfolio-feature-link{
-    display: block;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.portfolio-feature-link:hover .portfolio-overflow{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transform: translateY(0);
-}
-
 .portfolio-feature-items:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -589,30 +582,36 @@ max-width: 264px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.portfolio-feature-link{
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-feature-link:hover .overflow-text{
+    transform: translateY(0);
+}
+.portfolio-feature-link:focus .overflow-text{
+    transform: translateY(0);
+}
+
+
 .portfolio-card-active{
     position: relative;
-    overflow: hidden; 
     width: 360px;
     height: 300px;
-    left: 0px;
+    overflow: hidden;
     
-     
-}
-
-.overflow-text:hover{
-    transform: translateY(0%); 
-}
-
-.overflow-text:focus {
-    transform: translateY(0%);
 }
 
 .overflow-text{
     position: absolute;
     top: 0;
+    left: 0;
     min-width: 100%;
     height: 100%;
-    padding-left: 40px 32px;
+    padding: 40px 32px;
     font-family: var(--primary-font);
     font-weight: 400;
     font-size: 16px;
