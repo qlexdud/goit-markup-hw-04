@@ -555,7 +555,7 @@ max-width: 264px;
     border: 1px solid #E7E9FC;
     padding: 12px 24px;
     border-radius: 4px;
-    transition-property: color, background-color, border, box-shadow;
+    transition-property: color, background-color, border-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
